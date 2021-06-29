@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/dictListAdapterKeyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dictionary Entry Key"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/dictListAdapterDetailsTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dictListAdapterDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non tortor congue, consequat dolor in, luctus tellus. Mauris semper ante non lectus pharetra malesuada. Nullam elementum id diam at imperdiet. Phasellus elementum vitae enim id commodo. Nulla ut scelerisque elit. Suspendisse eu eleifend eros. Vestibulum ullamcorper sem metus, et imperdiet nulla mollis imperdiet. Aliquam ex libero, euismod sed eros ut, consectetur maximus arcu. Ut augue orci, egestas vitae sapien id, condimentum commodo arcu."
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dictListAdapterKeyTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
